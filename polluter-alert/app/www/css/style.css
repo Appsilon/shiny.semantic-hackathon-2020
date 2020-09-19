@@ -1,0 +1,8 @@
+body {
+  margin: 0 !important;
+  background: #D7D7E1 !important;
+}
+
+#polluters_map {
+  height: 100vh !important;
+}

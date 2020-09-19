@@ -1,0 +1,12 @@
+name: polluter_alert
+title: Polluter Alert
+username: pawel
+account: pawel
+server: demo.appsilon.ai
+hostUrl: https://demo.appsilon.ai/apps/__api__
+appId: 85
+bundleId: 256
+url: https://demo.appsilon.ai:443/apps/polluter/
+when: 1600554596.3462
+asMultiple: FALSE
+asStatic: FALSE
