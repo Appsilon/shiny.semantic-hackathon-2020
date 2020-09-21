@@ -1,0 +1,28 @@
+.loading {
+  transition: all 1s ease !important;
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  opacity: 0;
+  pointer-events: all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.recalculating#gridCells .cell-container,
+.recalculating ~ #gridCells .cell-container {
+  opacity: 0 !important;
+}
+.recalculating#gridCells .loading,
+.recalculating ~ #gridCells .loading {
+  opacity: 1 !important;
+}
+
+.recalculating {
+  opacity: 0 !important;
+}

@@ -1,0 +1,68 @@
+@media (max-width: 1000px) {
+  body {
+    padding: 0 15px 0 0 !important;
+  }
+
+  #main-page {
+    min-width: 0px;
+    grid-template-columns: 88vw 90vw !important;
+    height: 100vh !important;
+
+    .pixel-grid {
+      overflow: hidden;
+      grid-template-rows: auto 200px !important;
+      padding: 0 !important;
+
+      .grid-wrapper {
+        overflow: hidden;
+      }
+
+      .grid-side {
+        grid-template-rows: 2fr 1fr !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+
+        #generatedPalette {
+          grid-row: 1;
+          grid-column: 1 / span 3;
+          font-size: 80%;
+        }
+
+        #generatePalette {
+          order: 0;
+          padding: 10px !important;
+        }
+
+        #downloadImage {
+          padding: 10px !important;
+        }
+
+        .spacer {
+          display: none;
+        }
+      }
+    }
+
+    .sidebar-container {
+      overflow: hidden;
+
+      grid-template-rows: 50px 150px 1fr 40px 100px !important;
+
+      .sidebar-options {
+        overflow: auto !important;
+      }
+
+      #image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: auto;
+          height: auto;
+          max-width: 100% !important;
+          max-height: 100% !important;
+        }
+      }
+    }
+  }
+}

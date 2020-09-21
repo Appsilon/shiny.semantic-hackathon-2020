@@ -1,0 +1,70 @@
+.sidebar-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar-container {
+  background-image: url('./dark-mosaic.png') !important;
+}
+
+.sidebar-options {
+  z-index: 60;
+  padding: 0 10px 10px 0;
+
+  & > * > * {
+    margin-bottom: 15px;
+  }
+
+  & > *:not(:first-of-type) label {
+    margin-top: 8px !important;
+  }
+}
+
+#main-page {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  min-height: 100vh;
+  overflow: auto;
+  min-width: 1400px;
+}
+
+#randomize,
+#reload {
+  margin: 0;
+  width: 100%;
+}
+
+.image-setting {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.header {
+  background-color: var(--color-image-average) !important;
+  display: flex;
+  align-items: center;
+
+  .title {
+    position: absolute;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.segment.header,
+.segment.side,
+.segment.main {
+  background-image: url('./dark-mosaic.png') !important;
+}
+
+#image {
+  height: auto !important;
+
+  img {
+    width: 100%;
+  }
+}

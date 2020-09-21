@@ -1,0 +1,18 @@
+#downloadPalette,
+#downloadImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.palette-cell {
+  position: relative;
+
+  .value{
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+    background: #151514;
+  }
+}

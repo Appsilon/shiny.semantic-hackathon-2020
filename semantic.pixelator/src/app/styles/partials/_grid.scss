@@ -1,0 +1,44 @@
+#gridCells {
+  position: relative;
+  width: fit-content;
+}
+
+.grid-side {
+  height: 100%;
+}
+
+.pixel-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .ui.checkbox {
+    max-width: 17px;
+  }
+
+  & .ui.checkbox,
+  & .ui.checkbox .label {
+    max-height: 0;
+    max-width: 0;
+    padding: 0;
+    margin: 0 -4px -4px 0;
+    border: 1px solid;
+  }
+}
+
+.cell-container {
+  position: relative;
+  z-index: 2;
+
+  .ui.loader:before {
+    border: .2em solid rgba(183, 183, 183, .1);
+  }
+}
