@@ -1,0 +1,32 @@
+<!-- 
+  Lazy person (speaking about me) way for creating fomantic DOM structure
+-->
+<div id="{{view_ids$container}}">
+  <div id = "{{view_ids$video_card}}" class="ui primary centered orange card">
+    <div class = "image">
+      <video id="{{view_ids$video_output}}" class = "image">Video stream not available.</video>
+    </div>  
+    <div class="ui bottom attached button" id="{{view_ids$video_snaphot_button}}">
+      <i class="camera icon"></i>
+        Take photo
+    </div>
+    <canvas id="{{view_ids$video_canvas}}"></canvas>
+  </div>
+  <div id = "{{view_ids$video_snaphot_output_container}}" class="ui primary centered orange card">
+    <div class = "image">
+      <img id="{{view_ids$video_snaphot_output}}" alt="The screen capture will appear in this box."> 
+    </div>
+    <div class="ui bottom attached button" id="{{view_ids$video_redo_button}}">
+        <i class="redo icon"></i>
+          Retry
+    </div>
+  </div>
+  <div id = "{{view_ids$upload_image_output_container}}" class="ui primary centered orange card">
+    <div class = "image" style = "height: auto;">
+      <div id="{{view_ids$upload_image_output}}" class="shiny-image-output image" style="height: auto"></div> 
+    </div>
+    <div class="content">
+      <div class="header center aligned shiny-text-output" id="{{view_ids$upload_image_path}}"></div>
+    </div>
+  </div>
+</div>

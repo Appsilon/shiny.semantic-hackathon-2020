@@ -1,0 +1,27 @@
+default:
+  home:
+    id: "home"
+    title: "Start"
+    alt: "Home"
+  tiles:
+    id: "tiles"
+    title: "Choose image collection"
+  picture:
+    id: "picture"
+    title: "Choose photo"
+    view_ids:
+      container: "contentarea"
+      video_card: "camerainput"
+      video_output: "video"
+      video_snaphot_button: "startbutton"
+      video_canvas: "canvas"
+      video_snaphot_output_container: "photooutput"
+      video_snaphot_output: "photo"
+      video_redo_button: "again"
+      upload_image_output_container: "uploadoutput"
+      upload_image_output: "photo_view"
+      upload_image_path: "uploadpath"
+      image_message: "image_message"
+  mosaic:
+    id: "mosaic"
+    title: "Mosaic generation"
