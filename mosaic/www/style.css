@@ -1,0 +1,68 @@
+#mosaied img {
+  width: 600px;
+}
+
+#mosaied {
+  width: 100% !important;
+  height: auto !important;
+}
+
+div[data-path="home"] {
+  background-image: url("start.jpeg");
+  background-size: 100% 100%;
+}
+
+#router-page-wrapper {
+  height: 100%;
+}
+
+.router {
+  height: inherit;
+}
+
+#video, #photo {
+    width: 320px !important;
+    height: 240px !important;
+}
+
+#camerainput, #photooutput {
+    width: 320px !important;
+}
+
+#uploadoutput {
+    width: 200px !important;
+}
+
+#camerainput > .image, #photooutput > .image {
+    height: auto !important;
+}
+
+#startbutton, #again {
+    width: 320px !important;
+    max-width: 320px !important;
+}
+
+#canvas {
+    display: none;
+}
+
+#camerainput, #photooutput, #uploadoutput {
+    display: none;
+}
+
+#image_message {
+    font-size: 1.5rem;
+}
+
+.toast-box i.close {
+    display: none;
+}
+
+
+#set div.field:first-of-type {
+  margin-left: auto;
+}
+
+#set div.field:last-of-type {
+  margin-right: auto;
+}
