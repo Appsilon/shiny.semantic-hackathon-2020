@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 !important;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.letters {
+  height: 100%;
+  font-size: 2rem;
+}
+
+.shiny-input-radiogroup {
+  display: grid;
+  gap: 10px;
+
+  & > label {
+    font-weight: bold;
+  }
+}
+
+.ui.form {
+  label {
+    font-weight: bold;
+  }
+}
