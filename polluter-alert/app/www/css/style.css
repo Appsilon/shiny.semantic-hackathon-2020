@@ -3,6 +3,8 @@ body {
   background: #D7D7E1 !important;
 }
 
-#polluters_map {
-  height: 100vh !important;
+@media screen and (min-width: 845px) {
+  #polluters_map {
+    height: 100vh !important;
+  }
 }

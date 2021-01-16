@@ -742,15 +742,10 @@
     },
     "shiny.semantic": {
       "Package": "shiny.semantic",
-      "Version": "0.4.0",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "shiny.semantic",
-      "RemoteUsername": "Appsilon",
-      "RemoteRef": "develop",
-      "RemoteSha": "e9911337414bf89fd81cb35fb5719c4410682a08",
-      "Hash": "464b6e7cba4d0aca93f22cb76ac5ebbe"
+      "Version": "0.4.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "d705c4ce908c8768af2cd688c73fa2d1"
     },
     "shinyjs": {
       "Package": "shinyjs",

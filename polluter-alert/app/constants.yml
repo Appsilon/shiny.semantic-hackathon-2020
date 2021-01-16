@@ -1,6 +1,6 @@
 default:
-  mapbox_token: "REMOVED"
-  airly_api_key: "REMOVED"
+  mapbox_token: "pk.eyJ1IjoiYXBwc2lsb24iLCJhIjoiY2s4YmdoaGl4MGJzczNsdHF0Mjg0eGd2cCJ9.PIE5mJe5pER9EFy088xz_A"
+  airly_api_key: "dpiIzM29qGi15BZLRsdzeg26hxqF0QYU"
   intro: "The main reason of air pollution in Poland is 'low emission' caused by %s, especially when illegal materials are used as fuel, such as waste. <br /><br /> Many people in Poland are worried about the air quality. They use apps to monitor pollution, such as %s which has been downloaded more than 500.000 times. This is an opportunity to build a community of polluter spotters. This Shiny dashboard allows to report air pollution sources. Let's build together an accurate dataset that will be used for actionable insights to fight air pollution. <br /><br /> This Shiny app has been built for Appsilon %s hackathon. It uses real time %s for air quality statistics. Other functionalities are mocked."
   random_comments:
     - "Gaz coraz droższy i nie jest dostępny wszędzie, dodatkowo wymaga sporych nakładów na instalacje."

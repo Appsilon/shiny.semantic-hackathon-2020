@@ -34,10 +34,17 @@ server <- function(input, output, session) {
       title = "Important message",
       header = h2(class = "ui header", icon("industry"), div(class = "content", "Polluter Alert")),
       content = grid(
-        grid_template = grid_template(default = list(
-          areas = rbind(c("photo", "text")),
-          cols_width = c("50%", "50%")
-        )),
+        grid_template = grid_template(
+          default = list(
+            areas = rbind(c("photo", "text")),
+            cols_width = c("50%", "50%")
+          ),
+          mobile = list(
+            areas = rbind(c("photo"), c("text")),
+            cols_width = c("100%"),
+            rows_height = c("50%", "50%")
+          )
+        ),
         container_style = "grid-gap: 20px",
         area_styles = list(text = "padding-right: 20px"),
         photo = tags$img(src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Warszawski_smog_%2822798350941%29.jpg/800px-Warszawski_smog_%2822798350941%29.jpg", style = "width: 100%", alt = "Source: Radek Kołakowski from Warsaw, Poland, Creative Commons / https://commons.wikimedia.org/wiki/File:Warszawski_smog_(22798350941).jpg"),
