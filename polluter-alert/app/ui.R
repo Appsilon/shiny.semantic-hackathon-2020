@@ -33,7 +33,7 @@ semanticPage(
       style = "border-radius: 0; width: 100%; background: #efefef",
       div(class = "content", 
           div(class = "header", style = "margin-bottom: 10px", 
-              tags$img(src = "https://demo.appsilon.ai/apps/semantic/_w_e6080e8f/images/elliot.jpg", 
+              tags$img(src = "images/elliot.jpg", 
                        class = "ui avatar image"), 
               "Paweł Przytuła ", 
               span(style = "color: #0099f9; font-size: 13px;", 
