@@ -8,3 +8,8 @@ Dashboards built with the new version (0.4.0) of [shiny.semantic](https://github
 * [Squaremantic](https://demo.appsilon.ai/apps/squaremantic/)
 * [FIFA 2019](https://demo.appsilon.ai/apps/fifa19/)
 * [Polluter Alert](https://demo.appsilon.ai/apps/polluter/)
+
+## Installation
+
+For FIFA 2019 please create your local .Rprofile with `source("renv/activate.R"))`
+as .Rprofile is ignored in this repo. Then run `renv::restore()`.
