@@ -1,48 +1,49 @@
 #image-picker-buttons {
   display: flex;
+  justify-content: space-evenly;
 
-  .form-group {
+  .button {
+    height: 50px;
+  }
+
+  .form {
     width: 45%;
-    margin-right: 10%;
-    font-size: 1rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid;
-    border-radius: 5px;
-    font-weight: bolder;
-    cursor: pointer;
-    position: relative;
 
-    label {
-      cursor: pointer;
+    .btn-file {
+      width: 100%;
+      color: white;
+      background-color: transparent;
+      border: 2px solid white;
+      border-radius: 4px;
+      margin-top: -3px;
+      padding: 0 !important;
+      justify-content: center;
+      transition: all 1s;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .icon {
+        display: none;
+      }
     }
-  }
+    #upload_progress {
+      margin-top: 4px !important;
 
-  #upload_progress.active:after,
-  #upload_progress.active:before {
-    content: "\f1b0";
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    top: 5px;
-    /* bottom: 0; */
-    right: 4px;
-    margin: auto;
-    font-family: Icons;
-    font-size: 13px;
-    animation: loader .6s infinite linear;
-    animation-duration: 1.9s;
-  }
-  #upload_progress.active:after {
-    right: unset;
-    left: 4px;
-  }
+      .bar {
+        background-color: white;
+        height: 4px;
+      }
 
-  #upload_progress .progress-bar,
-  input[type=text] {
-    display: none;
+      .label {
+        color: white;
+      }
+    }
+    input[type=text] {
+      display: none;
+    }
   }
 
   button {

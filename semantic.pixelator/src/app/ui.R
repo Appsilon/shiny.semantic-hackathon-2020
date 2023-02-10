@@ -28,11 +28,11 @@ semanticPage(
       class = "sidebar-wrapper",
       gridPanel(class = "ui raised segment inverted sidebar-container",
         gap = "15px",
-        rows = "35px 322px 1fr 40px 100px",
+        rows = "70px 322px 1fr 40px 100px",
 
         div(
           id = "image-picker-buttons",
-          darkify(fileInput, "upload", label = "", buttonLabel = "Upload image", type = "file", accept = "image/png, image/jpeg"),
+          fileInput("upload", label = "", buttonLabel = "Upload image", type = "file", accept = "image/png, image/jpeg"),
           darkify(action_button, "reload", "Random image")
         ),
         imageOutput("image"),
