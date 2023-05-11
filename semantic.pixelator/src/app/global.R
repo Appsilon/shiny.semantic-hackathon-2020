@@ -19,9 +19,9 @@ source("modules/ui-fragments.R")
 source("modules/about-section.R")
 
 # Preprocess required css
-sass(
-  sass::sass_file("styles/main.scss"),
-  cache_options = sass_cache_options(FALSE),
-  options = sass_options(output_style = "compressed"),
-  output = "www/css/sass.min.css"
-)
+# sass(
+#   sass::sass_file("styles/main.scss"),
+#   cache_options = sass_cache_options(FALSE),
+#   options = sass_options(output_style = "compressed"),
+#   output = "www/css/sass.min.css"
+# )
