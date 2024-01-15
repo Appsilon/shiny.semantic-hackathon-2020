@@ -15,6 +15,12 @@ semanticPage(
     header = div(
       class = "ui raised segment inverted",
       div(class = "background-gradient"),
+      tags$a(
+        class = "header-logo",
+        href = "https://appsilon.com/",
+        target = "_blank",
+        tags$img(src = "assets/appsilon-logo-mark.png")
+      ),
       h2(class = "title", "Semantic Pixelator")
     ),
 
@@ -22,11 +28,11 @@ semanticPage(
       class = "sidebar-wrapper",
       gridPanel(class = "ui raised segment inverted sidebar-container",
         gap = "15px",
-        rows = "35px 322px 1fr 40px 100px",
+        rows = "70px 322px 1fr 40px 100px",
 
         div(
           id = "image-picker-buttons",
-          darkify(fileInput, "upload", label = "", buttonLabel = "Upload image", type = "file", accept = "image/png, image/jpeg"),
+          fileInput("upload", label = "", buttonLabel = "Upload image", type = "file", accept = "image/png, image/jpeg"),
           darkify(action_button, "reload", "Random image")
         ),
         imageOutput("image"),
@@ -68,6 +74,16 @@ semanticPage(
           div(class = "image-setting", darkify(toggle, "toggleRed", "Red channel")),
           div(class = "image-setting", darkify(toggle, "toggleGreen", "Green channel")),
           div(class = "image-setting", darkify(toggle, "toggleBlue", "Blue channel"))
+        ),
+
+        tags$footer(
+          tags$span("Built with ❤ by Appsilon"),
+          tags$a(
+            class = "footer-link",
+            href = "https://appsilon.com/#contact",
+            target = "_blank",
+            "Let's Talk"
+          )
         )
       )
     ),
