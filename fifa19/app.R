@@ -78,20 +78,27 @@ ui <- semanticPage(
       list(name = "Player's details", link = route_link("player"), icon = "running"),
       list(name = "By country", link = route_link("country"), icon = "globe europe"),
       list(name = "By league", link = route_link("league"), icon = "futbol outline")
-    ), logo = "http://www.anjelsyndicate.org/wp-content/uploads/2018/06/Fifa-19.png"
+    ),
+    logo = tags$a(
+      href = "https://appsilon.com/",
+      target = "_blank",
+      tags$img(
+        src = "imgs/appsilon-logo.png",
+        id = "appsilon-logo"
+      )
+    )
   ),
   router$ui,#router_ui(),
-  tags$footer("Created by dokato for Appsilon", align = "center", style = "
-                        position:fixed;
-                        bottom:0;
-                        right:0;
-                        left:0;
-                        background:black;
-                        color: white;
-                        padding:10px;
-                        box-sizing:border-box;
-                        z-index: 1000;
-                        text-align: center")
+  tags$footer(
+    span("Created by dokato for Appsilon"),
+    span(id = "reserved", "All rights reserved."),
+    tags$a(
+      id = "contact-link",
+      href = "https://appsilon.com/#contact",
+      target = "_blank",
+      "Let's Talk"
+    )
+  )
 )
 
 

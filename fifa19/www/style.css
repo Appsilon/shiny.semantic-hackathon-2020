@@ -2,6 +2,46 @@
   background: #c6deff;
 }
 
+a:has(#appsilon-logo) {
+  display: flex;
+}
+
+#appsilon-logo {
+  width: 110px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#appsilon-logo:hover {
+  transform: scale(1.05);
+}
+
+#menu_panel > .item {
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  background-color: #222;
+  padding: 10px 20px;
+}
+
+#reserved {
+  font-size: 12px;
+}
+
+#contact-link {
+  color: #85CDFD;
+  font-weight: 700;
+}
+
 body {
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#133951)) fixed;
 }
